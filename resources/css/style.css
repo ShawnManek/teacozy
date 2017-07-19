@@ -22,7 +22,9 @@ h2 {
 }
 
 h3 {
-  font-size: 20.8px;
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 h4 {
@@ -181,16 +183,44 @@ main {
 
 .locationsection {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
-  background-size: 100% 690px;
-  background-position: top center;
+  background-size: auto;
+  background-position: center;
   background-repeat: no-repeat;
   height: 500px;
   min-width: 1200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.loctite {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .locationsh {
   background-color: transparent;
+}
+
+.locplusaddress {
+  background: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.locaddress {
+  opacity: 1.0;
+  background-color: black;
+  min-width: 300px;
+  margin: 15px 20px 0 20px;
+}
+
+.locaddress h3,
+.locaddress p {
+  display: block;
+  padding: 20px;
 }

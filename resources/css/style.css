@@ -94,8 +94,7 @@ main {
   justify-content: center;
   flex-shrink: 0;
   position: relative;
-  top: 0;
-  margin-top: 69px;
+  padding-top: 69px;
   align-items: center;
 }
 
@@ -131,8 +130,7 @@ main {
   justify-content: center;
   flex-shrink: 0;
   position: relative;
-  top: 0;
-  margin-top: 69px;
+  padding-top: 69px;
   align-items: center;
 }
 
@@ -176,8 +174,7 @@ main {
   justify-content: center;
   flex-shrink: 0;
   position: relative;
-  top: 0;
-  margin-top: 69px;
+  padding-top: 69px;
   align-items: center;
 }
 

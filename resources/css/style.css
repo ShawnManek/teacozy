@@ -99,6 +99,7 @@ header {
 
 .missionstate {
   display: inline-flex;
+  flex-direction: column;
 }
 
 .spanh2,

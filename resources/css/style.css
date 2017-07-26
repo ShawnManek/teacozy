@@ -5,6 +5,8 @@
   border: 1px dotted green;
 }
 
+/* Common font style characteristics utilized for TeaCozy Site */
+
 * {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
@@ -15,31 +17,36 @@
   margin: 0;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   display: block;
-  font-size: 36px;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 h3 {
-  display: block;
   font-size: 28px;
-  font-weight: bold;
 }
 
 h4 {
-  display: block;
   font-size: 22px;
-  font-weight: bold;
 }
 
 h5 {
-  12.8px;
+  font-size: 12.8px;
 }
+
+/* Default html body characteristics */
 
 body {
   margin: 0;
 }
+
+/* Header section */
 
 header {
   border-bottom: 1px solid seashell;
@@ -80,6 +87,10 @@ header {
   padding: 0 10px;
 }
 
+/* MAIN SECTION */
+
+/* Beginning of the main section with 3 main containters - mission, featured, locations */
+
 main {
   display: flex;
   justify-content: center;
@@ -88,7 +99,9 @@ main {
   min-width: 1200px;
 }
 
-.mission {
+/* the main container class - utilize for each new section added to website then manipulate */
+
+.maincontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,6 +110,21 @@ main {
   padding-top: 69px;
   align-items: center;
 }
+
+/* Utilize below for text sections when needed throughout site*/
+
+.spanh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 0;
+}
+
+.bannertextbg {
+    min-width: 1200px;
+}
+
+/*Main section, Container 1: Mission*/
 
 .missionsection {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
@@ -108,36 +136,13 @@ main {
   align-items: center;
 }
 
-.sectiontitle {
+.missionstatement {
   display: flex;
   flex-direction: column;
 }
 
-.missionh {
-    min-width: 1200px;
-}
-
-.spanh {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 9px 0;
-}
-
-.featured {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  padding-top: 69px;
-  align-items: center;
-}
-
-.featuredh {
-  min-width: 1200px;
-}
-
+/*Main section, Container 2: featured teas (includes 2 sections: a. title and b. types of teas and their pics) */
+/*featured tea - a) title*/
 .featuredsection {
   width: 1200px;
   display: flex;
@@ -145,6 +150,7 @@ main {
   justify-content: center;
 }
 
+/*featured tea - a) types of teas*/
 .teatyperow {
   display: inline-flex;
   flex-flow: nowrap row;
@@ -169,14 +175,7 @@ main {
   margin-bottom: 1px;
 }
 
-.location {
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  padding-top: 69px;
-  align-items: center;
-}
+/*Main section, Container 3: Location (includes 2 sections: a. title and b. the locations) */
 
 .locationsection {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
@@ -198,7 +197,7 @@ main {
   justify-content: center;
 }
 
-.locationsh {
+.transparentbg {
   background-color: transparent;
 }
 
@@ -214,10 +213,10 @@ main {
   background-color: black;
   min-width: 300px;
   margin: 15px 20px 0 20px;
+  padding-bottom: 10px;
 }
 
 .locaddress h3,
 .locaddress p {
-  display: block;
   padding: 20px;
 }

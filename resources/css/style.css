@@ -52,7 +52,7 @@ h5 {
   font-size: 18px;
 }
 
-/* Utilize below for text sections when needed throughout site*/
+/* Utilize below for text/sections when needed throughout site*/
 
 .typebasic {
   display: flex;
@@ -65,6 +65,10 @@ h5 {
     min-width: 1200px;
 }
 
+.transparentbg {
+  background-color: transparent;
+}
+
 /* Header section */
 
 header {
@@ -74,7 +78,7 @@ header {
   width: 100%;
   padding: 9px 10px;
   display: flex;
-  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping is put nowrap here and in .navlinks below (kept <header> and .navlinks as wrap to match sample website)*/
+  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping. To improve, write nowrap here and in .navlinks below (kept <header> and .navlinks as wrap to match sample website)*/
   align-items: center;
   z-index: 20;
 }
@@ -92,11 +96,10 @@ header {
 }
 
 .navlinks {
-  background-color: transparent;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping is put nowrap here and in <header> above (kept <header> and .navlinks as wrap to match sample website)*/
+  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping. To improve, write nowrap here and in <header> above (kept <header> and .navlinks as wrap to match sample website)*/
   height: 50px;
   margin: 0 10px;
 }
@@ -199,9 +202,6 @@ main {
   align-items: center;
 }
 
-.transparentbg {
-  background-color: transparent;
-}
 /*Location b. locations */
 .locplusaddress {
   background: none;

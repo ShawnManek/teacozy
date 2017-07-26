@@ -5,6 +5,12 @@
   border: 1px dotted green;
 }
 
+/* Default html body characteristics */
+
+body {
+  margin: 0;
+}
+
 /* Common font style characteristics utilized for TeaCozy Site */
 
 * {
@@ -46,10 +52,17 @@ h5 {
   font-size: 18px;
 }
 
-/* Default html body characteristics */
+/* Utilize below for text sections when needed throughout site*/
 
-body {
-  margin: 0;
+.typebasic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 0;
+}
+
+.bannertextbg {
+    min-width: 1200px;
 }
 
 /* Header section */
@@ -119,19 +132,6 @@ main {
   position: relative;
   padding-top: 69px;
   align-items: center;
-}
-
-/* Utilize below for text sections when needed throughout site*/
-
-.typebasic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 9px 0;
-}
-
-.bannertextbg {
-    min-width: 1200px;
 }
 
 /*Main section, Container 1: Mission*/
@@ -224,7 +224,7 @@ main {
   padding: 20px;
 }
 
-/* Footer section: 2 containers 1. contact 2. copuright */
+/* Footer section: 2 containers 1. contact 2. copyright */
 
 footer {
   display: flex;
@@ -236,6 +236,10 @@ footer {
 .contact {
   height: 200px;
   width: auto;
+}
+
+.contact h5 {
+  padding: 20px;
 }
 
 .copyright {

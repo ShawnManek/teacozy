@@ -74,8 +74,7 @@ header {
   width: 100%;
   padding: 9px 10px;
   display: flex;
-  flex-flow: wrap row;
-  justify-content: flex-start;
+  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping is put nowrap here and in .navlinks below (kept <header> and .navlinks as wrap to match sample website)*/
   align-items: center;
   z-index: 20;
 }
@@ -97,7 +96,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-flow: wrap row;
+  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping is put nowrap here and in <header> above (kept <header> and .navlinks as wrap to match sample website)*/
   height: 50px;
   margin: 0 10px;
 }

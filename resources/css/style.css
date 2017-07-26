@@ -17,11 +17,17 @@
   margin: 0;
 }
 
+h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   display: block;
   font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 h2 {
@@ -37,7 +43,7 @@ h4 {
 }
 
 h5 {
-  font-size: 12.8px;
+  font-size: 18px;
 }
 
 /* Default html body characteristics */
@@ -55,7 +61,7 @@ header {
   width: 100%;
   padding: 9px 10px;
   display: flex;
-  flex-flow: nowrap row;
+  flex-flow: wrap row;
   justify-content: flex-start;
   align-items: center;
   z-index: 20;
@@ -74,6 +80,7 @@ header {
 }
 
 .navlinks {
+  background-color: transparent;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -82,9 +89,12 @@ header {
   margin: 0 10px;
 }
 
-.navlinks span {
+.navlinks span,
+.navlinks a {
+  background-color: transparent;
   display: inline-flex;
-  padding: 0 10px;
+  flex-flow: nowrap row;
+  padding: 10px 10px;
 }
 
 /* MAIN SECTION */
@@ -113,7 +123,7 @@ main {
 
 /* Utilize below for text sections when needed throughout site*/
 
-.spanh {
+.typebasic {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +152,7 @@ main {
 }
 
 /*Main section, Container 2: featured teas (includes 2 sections: a. title and b. types of teas and their pics) */
-/*featured tea - a) title*/
+/*featured tea - a. title*/
 .featuredsection {
   width: 1200px;
   display: flex;
@@ -150,7 +160,7 @@ main {
   justify-content: center;
 }
 
-/*featured tea - a) types of teas*/
+/*featured tea - b. types of teas*/
 .teatyperow {
   display: inline-flex;
   flex-flow: nowrap row;
@@ -176,7 +186,7 @@ main {
 }
 
 /*Main section, Container 3: Location (includes 2 sections: a. title and b. the locations) */
-
+/*Location a. title*/
 .locationsection {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
   background-size: auto;
@@ -193,7 +203,7 @@ main {
 .transparentbg {
   background-color: transparent;
 }
-
+/*Location b. locations */
 .locplusaddress {
   background: none;
   display: inline-flex;
@@ -212,4 +222,28 @@ main {
 .locaddress h3,
 .locaddress p {
   padding: 20px;
+}
+
+/* Footer section: 2 containers 1. contact 2. copuright */
+
+footer {
+  display: flex;
+  position: relative;
+  flex-flow: wrap column;
+  margin-bottom: 20px;
+}
+
+.contact {
+  height: 200px;
+  width: auto;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.copyright h5 {
+  text-align: left;
 }

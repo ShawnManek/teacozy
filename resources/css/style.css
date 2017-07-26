@@ -190,13 +190,6 @@ main {
   align-items: center;
 }
 
-.loctite {
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .transparentbg {
   background-color: transparent;
 }

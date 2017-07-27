@@ -2,7 +2,7 @@
 /* toggle box borders for styling check */
 
 .box {
-  border: 1px dotted green;
+  border: 1px dotted aqua;
 }
 
 /* Default html body characteristics */
@@ -21,15 +21,6 @@ body {
   opacity: 0.9;
   text-align: center;
   margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  display: block;
-  font-weight: bold;
 }
 
 h1 {
@@ -67,6 +58,10 @@ h5 {
 
 .transparentbg {
   background-color: transparent;
+}
+
+.fullopacity {
+  opacity: 1.0;
 }
 
 /* Header section */
@@ -206,13 +201,11 @@ main {
 .locplusaddress {
   background: none;
   display: inline-flex;
-  flex-direction: row;
   justify-content: center;
   margin-top: 15px;
 }
 
 .locaddress {
-  opacity: 1.0;
   background-color: black;
   min-width: 300px;
   margin: 0 20px 0 20px;

@@ -136,14 +136,14 @@ main {
 }
 
 /*Main section, Container 1: Mission --> needs a specific height of 700px and a background image*/
-.missionheight.aligntobgimg {
-  height: 700px;
-}
-
 .missionbg {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
   background-size: auto;
   background-repeat: no-repeat;
+}
+
+.missionheight.aligntobgimg {
+  height: 700px;
 }
 
 /*Main section, Container 2: Featured Teas (includes 2 parts: a. title (no add'l classes) and b. types of teas and their pics) */
@@ -173,15 +173,15 @@ main {
 
 /*Main section, Container 3: Location (includes 2 parts: a. title and b. the locations) */
 /*Location a. title ---> .aligntobgimg class, change it's height to 500px. add background image*/
-.locheight.aligntobgimg {
-  height: 500px;
-}
-
 .locbg {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.locheight.aligntobgimg {
+  height: 500px;
 }
 
 /*Location b. locations */

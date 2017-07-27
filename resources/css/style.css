@@ -60,10 +60,6 @@ h5 {
   background-color: transparent;
 }
 
-.fullopacity {
-  opacity: 1.0;
-}
-
 /* Header section */
 
 header {
@@ -108,8 +104,7 @@ header {
 }
 
 /* MAIN SECTION */
-
-/* Beginning of the main section with 3 main containters - mission, featured, locations */
+/* Main section has 3 main containters - mission, featured, locations */
 
 main {
   display: flex;
@@ -119,7 +114,8 @@ main {
   min-width: 1200px;
 }
 
-/* the main container class - utilize for each new section added to website then manipulate */
+/* Common main section classes: the .maincontainer and .section classes:
+ utilize these classes for each new section added to main website section and code*/
 
 .maincontainer {
   display: flex;
@@ -131,32 +127,26 @@ main {
   align-items: center;
 }
 
-/*Main section, Container 1: Mission*/
-
-.missionsection {
-  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
-  background-size: auto;
-  background-repeat: no-repeat;
-  height: 700px;
-  width: 1200px;
-  display: flex;
-  align-items: center;
-}
-
-.missionstatement {
-  display: flex;
-  flex-direction: column;
-}
-
-/*Main section, Container 2: featured teas (includes 2 sections: a. title and b. types of teas and their pics) */
-/*featured tea - a. title*/
-.featuredsection {
+.section {
   width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
+/*Main section, Container 1: Mission --> needs a specific height of 700px and a background image*/
+.missionheight.section {
+  height: 700px;
+}
+
+.missionbg {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+/*Main section, Container 2: Featured Teas (includes 2 parts: a. title (no add'l classes) and b. types of teas and their pics) */
 /*featured tea - b. types of teas*/
 .teatyperow {
   display: inline-flex;
@@ -179,27 +169,25 @@ main {
   display: inline-block;
   height: 200px;
   width: 300px;
-  margin-bottom: 1px;
 }
 
-/*Main section, Container 3: Location (includes 2 sections: a. title and b. the locations) */
-/*Location a. title*/
-.locationsection {
+/*Main section, Container 3: Location (includes 2 parts: a. title and b. the locations) */
+/*Location a. title ---> .section class, change it's height to 500px. add background image*/
+.locheight.section {
+  height: 500px;
+}
+
+.locbg {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
-  min-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /*Location b. locations */
 .locplusaddress {
   background: none;
+  opacity: 1.0;
   display: inline-flex;
   justify-content: center;
   margin-top: 15px;
@@ -207,6 +195,7 @@ main {
 
 .locaddress {
   background-color: black;
+  opacity: 1.0;
   min-width: 300px;
   margin: 0 20px 0 20px;
   padding-bottom: 10px;
@@ -217,7 +206,7 @@ main {
   padding: 20px;
 }
 
-/* Footer section: 2 containers 1. contact 2. copyright */
+/* FOOTER section: 2 containers 1. contact 2. copyright */
 
 footer {
   display: flex;

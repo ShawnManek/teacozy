@@ -53,7 +53,7 @@ h5 {
 }
 
 .bannertextbg {
-    min-width: 1200px;
+  min-width: 1200px;
 }
 
 .transparentbg {
@@ -108,10 +108,9 @@ header {
 
 main {
   display: flex;
-  justify-content: center;
   position: relative;
   flex-direction: column;
-  min-width: 1200px;
+  justify-content: center;
 }
 
 /* Common main section classes: the .maincontainer and if bg image then must align contents
@@ -196,14 +195,14 @@ main {
 .locaddress {
   background-color: black;
   opacity: 1.0;
-  min-width: 300px;
+  width: 300px;
   margin: 0 20px 0 20px;
   padding-bottom: 10px;
 }
 
 .locaddress h3,
 .locaddress p {
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 /* FOOTER section: 2 containers 1. contact 2. copyright */

@@ -114,8 +114,8 @@ main {
   min-width: 1200px;
 }
 
-/* Common main section classes: the .maincontainer and .section classes:
- utilize these classes for each new section added to main website section and code*/
+/* Common main section classes: the .maincontainer and if bg image then must align contents
+ to the bg image with the .aligntobgimg class*/
 
 .maincontainer {
   display: flex;
@@ -127,7 +127,7 @@ main {
   align-items: center;
 }
 
-.section {
+.aligntobgimg {
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@ main {
 }
 
 /*Main section, Container 1: Mission --> needs a specific height of 700px and a background image*/
-.missionheight.section {
+.missionheight.aligntobgimg {
   height: 700px;
 }
 
@@ -147,7 +147,7 @@ main {
 }
 
 /*Main section, Container 2: Featured Teas (includes 2 parts: a. title (no add'l classes) and b. types of teas and their pics) */
-/*featured tea - b. types of teas*/
+/*featured tea - b. types of teas (note-this sets this section to max-width 1200px)*/
 .teatyperow {
   display: inline-flex;
   flex-flow: nowrap row;
@@ -172,8 +172,8 @@ main {
 }
 
 /*Main section, Container 3: Location (includes 2 parts: a. title and b. the locations) */
-/*Location a. title ---> .section class, change it's height to 500px. add background image*/
-.locheight.section {
+/*Location a. title ---> .aligntobgimg class, change it's height to 500px. add background image*/
+.locheight.aligntobgimg {
   height: 500px;
 }
 

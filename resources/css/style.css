@@ -87,6 +87,7 @@ header {
 }
 
 .navlinks {
+  background: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -95,12 +96,16 @@ header {
   margin: 0 10px;
 }
 
-.navlinks span,
+.navlinks span {
+  background: none;
+}
+
 .navlinks a {
-  background-color: transparent;
-  display: inline-flex;
-  flex-flow: nowrap row;
-  padding: 10px 10px;
+  background: none;
+  display: inline-block;
+  text-align: right;
+  margin: 0 auto;
+  padding: 10px 15px;
 }
 
 /* MAIN SECTION */
@@ -127,6 +132,7 @@ main {
 }
 
 .aligntobgimg {
+  height: 700px;
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -134,19 +140,16 @@ main {
   align-items: center;
 }
 
-/*Main section, Container 1: Mission --> needs a specific height of 700px and a background image*/
+/*Main section, Container 1: Mission --> a background image and aligntobgimg class in html for the title text*/
 .missionbg {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
   background-size: auto;
   background-repeat: no-repeat;
 }
 
-.missionheight.aligntobgimg {
-  height: 700px;
-}
-
 /*Main section, Container 2: Featured Teas (includes 2 parts: a. title (no add'l classes) and b. types of teas and their pics) */
-/*featured tea - b. types of teas (note-this sets this section to max-width 1200px)*/
+
+/*featured tea - b. types of teas (2 rwos with img and description children)*/
 .teatyperow {
   display: inline-flex;
   flex-flow: nowrap row;
@@ -216,7 +219,7 @@ footer {
 
 .contact {
   height: 200px;
-  width: auto;
+  width: 100%;
 }
 
 .contact h5 {
